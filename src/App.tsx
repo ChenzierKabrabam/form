@@ -1,7 +1,7 @@
 import React from 'react'
 import Box from '@mui/material/Box'
 import { Routes, Route, Navigate } from 'react-router-dom'
-import { Dashboard, Signin, Signup } from './pages'
+import { Dashboard, PageNotFound, Signin, Signup } from './pages'
 import { ProtectedRoute } from './components'
 
 const App: React.FC = (): JSX.Element => {
@@ -24,6 +24,7 @@ const App: React.FC = (): JSX.Element => {
             </ProtectedRoute>
           }
         />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
     </Box>
   )
