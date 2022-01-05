@@ -147,7 +147,7 @@ const SignupForm: React.FC = (): JSX.Element => {
             padding: theme.spacing(1),
           }}
         >
-          <Typography variant='body1'>Don't have an account?</Typography>
+          <Typography variant='body1'>Already have an account?</Typography>
           <Link to='/signin' style={{ textDecoration: 'none' }}>
             <Button variant='text' color='primary'>
               Login
